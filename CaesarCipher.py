@@ -20,11 +20,3 @@ class caesar_cipher:
     def decrypt(self, ciphertext: str, shift: int) -> str:
 
         return self.encrypt(ciphertext, 0 - shift)
-
-word = "hello world"
-print(word)
-cc = caesar_cipher()
-encrypted = cc.encrypt(word, 1)
-print(encrypted)
-decrypted = cc.decrypt(encrypted, 1)
-print(decrypted)

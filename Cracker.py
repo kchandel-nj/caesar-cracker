@@ -16,12 +16,3 @@ class cracker:
                 answer = (potential, 26 - i)
                 return answer
         return (ciphertext, -1)
-    
-cc = caesar_cipher()
-crack = cracker()
-word = "hello"
-enc = cc.encrypt(word, 15)
-print(enc)
-print("Cracking...")
-cracked = crack.crack(enc, False)
-print(cracked)
